@@ -10,12 +10,22 @@ import android.widget.Toast;
 public class Tela2 extends AppCompatActivity {
 
     private EditText editText1, editText2, editText3;
-    private Button btnResult;
+    private Button btnResult, btnSair1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela2);
+
+        btnSair1 = findViewById(R.id.btnSair1);
+        btnSair1.setOnClickListener(new View. OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                finishAffinity();
+            }
+        });
+
 
         editText1 = findViewById(R.id.valor1);
         editText2 = findViewById(R.id.valor2);
