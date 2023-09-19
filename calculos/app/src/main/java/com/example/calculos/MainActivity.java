@@ -9,6 +9,9 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button btnCalc, btnBhas, btnForm, btnIMC;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +23,35 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent Tela2 = new Intent(getApplicationContext(), Tela2.class);
                 startActivity(Tela2);
-                Intent Tela3 = new Intent(getApplicationContext(), Tela3.class);
-                startActivity(Tela3);
-                Intent Tela4 = new Intent(getApplicationContext(), Tela4.class);
-                startActivity(Tela4);
+
             }
+
+            Button btnIMC = findViewById(R.id.btnIMC);
+        btnIMC.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View view) {
+                    Intent Tela3 = new Intent(getApplicationContext(), Tela3.class);
+                    startActivity(Tela3);
+
+                }
+                Button btnBhas = findViewById(R.id.btnBhas);
+                btnBhas.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent Tela4 = new Intent(getApplicationContext(), Tela4.class);
+                        startActivity(Tela4);
+
+                    }
+
+                    Button btnForm = findViewById(R.id.btnForm);
+                btnForm.setOnClickListener(new View.OnClickListener() {
+
+                            Intent Tela5 = new Intent(getApplicationContext(), Tela5.class);
+                            startActivity(Tela5);
+                        }
+                };
+            });
+          }
         });
-    };
+    }
 }

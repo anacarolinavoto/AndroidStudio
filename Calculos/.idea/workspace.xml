@@ -32,9 +32,13 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.2035181305">
+      <recent name="com.example.calculos" />
+    </key>
+    <key name="android.template.-2113522227">
       <recent name="com.example.calculos" />
     </key>
   </component>
